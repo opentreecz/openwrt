@@ -6,7 +6,7 @@ file_date()
 {
     date --utc +%Y-%m-%d_%H%M%SZ
 }
-export -f file_date
+export file_date
 backupfile="/root/openwrt_config_backup"
 
 uci export > ${backupfile}-$(file_date)-pre.uci
